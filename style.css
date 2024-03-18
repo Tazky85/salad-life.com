@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+ /* common */
+
+html {
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Noto Sans JP", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+.pop {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* ヘッダー部分 */
+
+header {
+  padding: 28px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  cursor: pointer;
+}
+
+.logo span {
+  color: #80BA4A;
+}
+
+.menu li {
+  margin-left: 40px;
+  list-style-type: none;
+}
+
+.menu li a {
+  transition: color 300ms;
+}
+
+.menu li a:hover {
+  color: #80BA4A;
+  transition: color 300ms;
+}
+
+/* メイン部分 */
+
+#hero {
+  background-image: url(../main.png);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  border-radius: 28px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 88px;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero_inner {
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero_innner p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.hero_inner h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+/* コンセプト */
+
+#concept {
+  margin-bottom: 120px;
+
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #80BA4A;
+  margin-bottom: 40px;
+}
+
+#concept h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.column-1 {
+  width: 48%;
+}
+
+.text {
+  line-height: 1.6;
+}
+
+.concept-img {
+  background-image: url(../concept.png);
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 20px;
+}
+
+.heading {
+  font-family: "Dancing Script", cursive;
+  font-size: 200px;
+  font-weight: 700;
+  color: #80BA4A;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-30%);
+  z-index: -1;
+}
+
+/* サービス */
+
+#service {
+  margin-bottom: 120px;
+}
+
+.service_inner {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.column-2 {
+  width: 40%;
+}
+
+.column-10 {
+  width: 55%;
+}
+
+#service img {
+  border-radius: 20px;
+}
+
+#service h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* カンパニー */
+
+#company {
+  margin-bottom: 120px;
+}
+
+#company dl {
+  max-width: 900px;
+  margin-left: auto;
+}
+
+#company dt {
+  width: 30%;
+  margin: 0;
+  padding: 48px 0;
+  font-weight: 500;
+  border-bottom: 1px solid #80BA4A;
+}
+
+#company dd {
+  width: 70%;
+  margin: 0;
+  padding: 48px 0;
+  border-bottom: 1px solid #80BA4A;
+}
+
+
+.column-a {
+  background-image: url(../image-a.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+.column-b {
+  background-image: url(../image-b.jpg);
+  background-position: center;
+  background-size: cover;
+  width:  18%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+.column-c {
+  background-image: url(../image-c.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+.column-d {
+  background-image: url(../image-d.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 28%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+
+/* フッター部分 */
+
+footer {
+  text-align: center;
+  margin: 90px 0;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+
+
+
+
+
